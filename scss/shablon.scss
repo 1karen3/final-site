@@ -1,0 +1,156 @@
+%hero {
+    font-family: 'Montserrat Bold';
+    font-size: 38px;
+    line-height: 46px;
+    color: #F0145A;
+}
+
+%hero_gradien {
+    font-family: 'Montserrat Bold';
+    font-size: 38px;
+    line-height: 46px;
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right, $accent, #EF8080 );
+}
+
+%hero_gradien_0 {
+    font-family: 'Montserrat Bold';
+    font-size: 30px;
+    line-height: 37px;
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right, $accent, #EF8080 );
+}
+
+%h2 {
+    font-family: 'Montserrat Bold';
+    font-size: 30px;
+    line-height: 37px;
+}
+
+%h3{
+    font-family: 'Montserrat Bold';
+    font-size: 22px;
+    line-height: 27px;
+    color: $active_regular;
+}
+
+%h3_caps{
+    padding-top: 30px;
+    font-family: 'Montserrat Bold';
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    color: #323264;
+    text-transform: uppercase;
+}
+
+%h3_caps_1{
+    font-family: 'Montserrat Bold';
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    color: $active_regular;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+%h3_caps_2{
+    font-family: 'Montserrat Bold';
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    color: $accent;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+%h3_caps_2{
+    font-family: 'Montserrat Bold';
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    color: $bg_text;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+%h4{
+    font-family: 'Montserrat Bold';
+    font-size: 16px;
+    line-height: 20px;
+    color: $active_regular;
+}
+
+%data{
+    font-family: 'Montserrat Bold';
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #B3B3BA;
+}
+
+%paragraph{
+    font-family: 'Montserrat Regular';
+    font-size: 16px;
+    line-height: 26px;
+    color: $white;
+}
+
+%Unordered_list{
+    font-family: 'Montserrat Regular';
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+}
+
+%Ordered_list{
+    font-family: 'Montserrat Regular';
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+}
+
+%flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%flex-sb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+%flex-start{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+%flex{
+    display: flex;
+}
+
+%flex-mid{
+    display: flex;
+    align-items: center;
+}
+
+%flex-right{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+%main{
+    font-family: 'Montserrat Regular';
+    font-size: 21px;
+    line-height: 30px;
+    color: #323264;
+}
