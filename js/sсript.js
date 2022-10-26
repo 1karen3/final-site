@@ -5,6 +5,8 @@ $('.slider').slick({
 	slidesToShow: 4,
 	slidesToScroll: 4,
 	dots: true,
+	autoplay: true,
+	autoplaySpeed: 3000,
 	responsive: [
 		{
 		  breakpoint: 1024,
@@ -33,3 +35,16 @@ $('.slider').slick({
 	});
 
 	
+	
+$('.main__card-ingormation-team-swiper').slick({
+	arrows: false,
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	dots: true,
+	autoplay: true,
+	autoplaySpeed: 3000,
+	});
+
+
+	new WOW().init();

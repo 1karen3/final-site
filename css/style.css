@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .new_section-title, .main__card-ingormation-text, .main_service__title, .main__information-title {
   font-family: "Montserrat Bold";
-  font-size: 38px;
+  font-size: 37px;
   line-height: 46px;
   color: transparent;
   -webkit-background-clip: text;
@@ -293,6 +293,10 @@
   height: 6px;
   border-radius: 50%;
   margin: 0 10px;
+}
+
+.facebool_wite {
+  transform: scale(1.1);
 }
 
 .adress {
@@ -636,6 +640,11 @@ hr {
   margin-bottom: 104px;
 }
 
+.scroll_hover:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
 .scroll_hover:hover svg circle {
   stroke: #F0145A;
 }
@@ -650,9 +659,22 @@ hr {
   flex-direction: row-reverse;
 }
 
+.main__card-ingormation-team-bg {
+  background-color: #F5F5FA;
+  border-radius: 0 8px 8px 0;
+}
+
+.main__card-ingormation-team_column {
+  margin-left: 30px;
+}
+
+.main_service.main_service-margin {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .main_service a {
   padding-right: 5px;
-  width: 30px;
 }
 
 .main_service {
@@ -743,7 +765,11 @@ hr {
   flex-direction: column;
 }
 
-.main__card-ingormation-team-bg {
+.slick-track {
+  width: 100%;
+}
+
+.main__card-ingormat.main_service {
   background-color: #F5F5FA;
   border-radius: 0 12px 12px 0;
   padding: 30px 0 30px 30px;
@@ -764,7 +790,7 @@ hr {
   font-size: 14px;
   line-height: 22px;
   color: #B3B3BA;
-  margin-top: 6px;
+  padding: 6px 0 30px 0;
 }
 
 .card_company {
@@ -802,6 +828,8 @@ hr {
   -moz-box-shadow: 0px -2px 25px 0px rgb(200, 200, 200);
   box-shadow: 0px -2px 25px 0px rgb(199, 199, 199);
   transition: 0.4s;
+  transform: scale(1.02);
+  border-radius: 8px 8px 8px 8px;
 }
 
 .new_section_card-contayner-text_padding {
@@ -864,9 +892,6 @@ hr {
 .contayner-klient-info {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin-top: 60px;
-  margin-left: 80px;
 }
 
 .contayner-klient-info_0 {
@@ -874,19 +899,20 @@ hr {
   background-color: #F5F5FA;
   border-radius: 12px;
   padding: 30px 30px;
+  margin-top: 60px;
   margin-bottom: 60px;
 }
 
 .contact_inf {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 .contact_flex-column {
   flex-direction: column;
   width: 510px;
-  margin-left: 8%;
 }
 
 #firstname_0 {
@@ -1316,8 +1342,8 @@ hr {
   .mgs {
     margin-left: 20px;
   }
-  .footer__contayner {
-    margin-bottom: 30px;
+  .last__footer {
+    padding-bottom: 30px;
   }
   .main_bg {
     margin-bottom: 60px;
@@ -1423,14 +1449,15 @@ hr {
   .main__information-text {
     width: auto;
   }
+  .contact_flex-column {
+    flex-direction: column;
+    width: 410px;
+  }
 }
 @media (max-width: 1070px) {
   .contact_flex-column {
     width: 30%;
     margin-left: 2%;
-  }
-  .contayner-klient-info_0 {
-    width: 100%;
   }
 }
 @media (max-width: 730px) {
@@ -1467,6 +1494,10 @@ hr {
     flex-direction: column;
     padding: 60px 0 0 0;
     margin-left: 40px;
+  }
+  .contayner-klient-info_0 {
+    width: 80%;
+    margin-left: 80px;
   }
   .card__contayner-flex {
     display: flex;
@@ -1527,6 +1558,9 @@ hr {
   }
 }
 @media (max-width: 768px) {
+  .contayner-klient-info_0 {
+    margin: 0;
+  }
   .contact_inf {
     flex-direction: column;
   }
@@ -1645,6 +1679,9 @@ hr {
   }
   .sb {
     padding-bottom: 30px;
+  }
+  .last__footer {
+    padding: 0;
   }
 }
 @media (max-width: 656px) {
@@ -1842,7 +1879,7 @@ hr {
   .header__logo-mobile {
     display: flex;
     margin: 15px 0 0 15px;
-    width: 50%;
+    width: 80%;
   }
   .Hamburger {
     margin: 0 22px 0 0;

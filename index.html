@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hlegal</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -32,7 +33,7 @@
     </div>  
         <div class="fix-size-main header__conteyner">
             <a href="index.html">
-            <img class="header__logo" src="img/Logo_main.svg" alt="logo">
+            <img class="header__logo wow animate__zoomInLeft" src="img/Logo_main.svg" alt="logo">
             </a>
             <div class="header__main-content">
             <div class="header__main-conteyner_contacts">
@@ -106,7 +107,7 @@
             </div>
             </div>
             </div>
-            <div class="fix-size-main">
+            <div class="fix-size-main wow animate__backInLeft">
             <h3 class="main_service"><a href="">Services</a><svg width="8" height="11" 
             viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
@@ -180,7 +181,7 @@
         <div class="Bg-line2"></div>
     </div>
 
-    <div class="fix-size-main">
+    <div class="fix-size-main main__card-ingormation-team-swiper">
     <div class="main__card-ingormation-team">
         <img class="teamete" src="img/teamete.png" alt="teamete">
         <img class="teamete_0" src="img/teamete_0.png" alt="teamete">
@@ -200,10 +201,44 @@
     </div>
     </div>
     </div>
-    <div class="swiper ">
-        <div class="swipe active_1"></div>
-        <div class="swipe probel"></div>
-        <div class="swipe"></div>
+    <div class="main__card-ingormation-team">
+        <img class="teamete" src="img/teamete.png" alt="teamete">
+        <img class="teamete_0" src="img/teamete_0.png" alt="teamete">
+        <img class="teamete_1" src="img/teamete_1.png" alt="teamete">
+        <div class="main__card-ingormation-team-bg">
+        <h3 class="main_service main_service-margin"><a href="">команда</a>
+            <svg width="8" height="11" 
+                viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
+            </svg>
+        </h3>
+    <div class="main__card-ingormation-team_column"> 
+        <h2 class="main__card-ingormation-text">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, 
+        вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+        <p class="teamete__name">Олександр Олександровський</p>
+        <p class="teamete__name_partner">Керуючий партнер</p>
+    </div>
+    </div>
+    </div>
+    <div class="main__card-ingormation-team">
+        <img class="teamete" src="img/teamete.png" alt="teamete">
+        <img class="teamete_0" src="img/teamete_0.png" alt="teamete">
+        <img class="teamete_1" src="img/teamete_1.png" alt="teamete">
+        <div class="main__card-ingormation-team-bg">
+        <h3 class="main_service main_service-margin"><a href="">команда</a>
+            <svg width="8" height="11" 
+                viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
+            </svg>
+        </h3>
+    <div class="main__card-ingormation-team_column"> 
+        <h2 class="main__card-ingormation-text">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, 
+        вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+        <p class="teamete__name">Олександр Олександровський</p>
+        <p class="teamete__name_partner">Керуючий партнер</p>
+    </div>
+    </div>
+    </div>
     </div>
     <div class="footer__card">
         <h3 class="title">They already trust us</h3>
@@ -288,7 +323,9 @@
         <div class="header__main-conteyner_nav">
             <div class="last__footer">
                 <a href="https://www.facebook.com/">
-                    <img src="img/facebook_footer.svg" alt="facebook">
+                    <svg class="facebook_wite" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z" fill="#24A3FF"/>
+                    </svg>
                 </a>
                 <div class="point_footer"></div>
                 <p class="phone__footer">0800 211 927</p>
@@ -301,6 +338,7 @@
     </div>
     </footer>
 </div>
+    <script src="js/wow.min.js"></script>
 	<!-- Подключаем jQuery -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<!-- Подключаем слайдер Slick -->
