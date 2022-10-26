@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .new_section-title, .main__card-ingormation-text, .main_service__title, .main__information-title {
   font-family: "Montserrat Bold";
   font-size: 38px;
@@ -236,6 +237,7 @@
 .lang_main:hover {
   background-color: #F0145A;
   color: white;
+  transition: 0.3s;
 }
 
 .lang_main-ab-us {
@@ -373,6 +375,7 @@
 .header__main-conteyner_nav .nav__list .nav__list__items a:hover {
   color: #F0145A;
   text-decoration: underline;
+  transition: 0.3s;
 }
 
 .main__first {
@@ -401,7 +404,7 @@
 }
 
 .main__card-contayners {
-  width: 440px;
+  width: 50%;
 }
 .main__card-contayners .main__cards:not(:last-child) {
   margin-bottom: 30px;
@@ -458,6 +461,7 @@
   text-align: right;
   color: #B3B3BA;
   padding-right: 60px;
+  transition: 0.2s;
 }
 
 .mgs:hover {
@@ -557,13 +561,17 @@ hr {
 }
 
 .footer__text {
-  cursor: pointer;
   color: #24A3FF;
   font-family: "Montserrat Bold";
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer__text:hover {
+  color: #F0145A;
 }
 
 .footer__main-conteyner_contacts-footer {
@@ -584,6 +592,10 @@ hr {
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
+}
+
+.email:hover {
+  color: #F0145A;
 }
 
 .email:focus {
@@ -643,6 +655,10 @@ hr {
   width: 30px;
 }
 
+.main_service {
+  display: inline-block;
+}
+
 .main_service a:hover {
   font-family: "Montserrat Bold";
   font-size: 14px;
@@ -685,6 +701,7 @@ hr {
   color: #F0145A;
   margin-top: 30px;
   width: 400px;
+  transition: 0.3s;
 }
 
 .cart-paragraph {
@@ -780,6 +797,13 @@ hr {
   width: 420px;
 }
 
+.new_section_card:hover {
+  -webkit-box-shadow: 0px -2px 25px 0px rgb(195, 195, 195);
+  -moz-box-shadow: 0px -2px 25px 0px rgb(200, 200, 200);
+  box-shadow: 0px -2px 25px 0px rgb(199, 199, 199);
+  transition: 0.4s;
+}
+
 .new_section_card-contayner-text_padding {
   padding: 30px 30px 0 30px;
   background-color: white;
@@ -787,7 +811,6 @@ hr {
 }
 
 .new_section_card img {
-  cursor: pointer;
   width: 420px;
   display: block;
 }
@@ -803,8 +826,9 @@ hr {
   cursor: pointer;
 }
 
-.new_section_card-title:hover{
+.new_section_card-title:hover {
   color: #F0145A;
+  transform: 0.3s;
 }
 
 .new_section_card-data {
@@ -922,10 +946,6 @@ hr {
   background: #006CCF;
 }
 
-.main_service__title_0 {
-  width: 100%;
-}
-
 .adders_contact-p {
   padding-bottom: 30px;
   margin-top: 60px;
@@ -998,7 +1018,6 @@ hr {
 }
 
 .footer__card-conteiner-img {
-  cursor: pointer;
   width: 96%;
   position: relative;
   border-radius: 12px;
@@ -1010,27 +1029,15 @@ hr {
 }
 
 .slick-prev.slick-arrow {
-  position: absolute;
-  top: 20%;
-  z-index: 10;
-  left: 0;
-  font-size: 0;
-  background: url(../img/left.svg) 0 0/100% no-repeat;
-  width: 30px;
-  height: 50px;
-  border: none;
+  display: none;
 }
 
 .slick-next.slick-arrow {
-  position: absolute;
-  top: 20%;
-  z-index: 10;
-  right: 0;
-  font-size: 0;
-  background: url(../img/right.svg) 0 0/100% no-repeat;
-  width: 30px;
-  height: 50px;
-  border: none;
+  display: none;
+}
+
+.slick-active.slick-slide-control01:active {
+  background-color: #24A3FF;
 }
 
 .slider .slick-initialized .slick-slider {
@@ -1046,13 +1053,53 @@ hr {
   justify-content: center;
 }
 
+.slick-active #slick-slide-control00 {
+  background-color: #24A3FF;
+}
+
+.slick-active #slick-slide-control01 {
+  background-color: #24A3FF;
+}
+
+.slick-active #slick-slide-control02 {
+  background-color: #24A3FF;
+}
+
+.slick-active #slick-slide-control03 {
+  background-color: #24A3FF;
+}
+
+.slick-active #slick-slide-control04 {
+  background-color: #24A3FF;
+}
+
+.slick-active #slick-slide-control05 {
+  background-color: #24A3FF;
+}
+
+.slick-active #slick-slide-control06 {
+  background-color: #24A3FF;
+}
+
+.slick-active #slick-slide-control07 {
+  background-color: #24A3FF;
+}
+
+.slick-active #slick-slide-control08 {
+  background-color: #24A3FF;
+}
+
 #slick-slide-control00 {
   border-radius: 50%;
   border: none;
   width: 16px;
   height: 16px;
-  background-color: #24A3FF;
+  background-color: #78c7ff;
   font-size: 0;
+}
+
+#slick-slide-control00:hover {
+  background-color: #24A3FF;
 }
 
 #slick-slide-control01 {
@@ -1066,7 +1113,7 @@ hr {
 }
 
 #slick-slide-control01:hover {
-  background-color: #5eb9fa;
+  background-color: #24A3FF;
 }
 
 #slick-slide-control02 {
@@ -1079,7 +1126,7 @@ hr {
 }
 
 #slick-slide-control02:hover {
-  background-color: #5eb9fa;
+  background-color: #24A3FF;
 }
 
 #slick-slide-control03 {
@@ -1093,7 +1140,7 @@ hr {
 }
 
 #slick-slide-control03:hover {
-  background-color: #5eb9fa;
+  background-color: #24A3FF;
 }
 
 #slick-slide-control04 {
@@ -1106,7 +1153,7 @@ hr {
 }
 
 #slick-slide-control04:hover {
-  background-color: #5eb9fa;
+  background-color: #24A3FF;
 }
 
 #slick-slide-control05 {
@@ -1120,7 +1167,7 @@ hr {
 }
 
 #slick-slide-control05:hover {
-  background-color: #5eb9fa;
+  background-color: #24A3FF;
 }
 
 #slick-slide-control06 {
@@ -1133,7 +1180,7 @@ hr {
 }
 
 #slick-slide-control06:hover {
-  background-color: #5eb9fa;
+  background-color: #24A3FF;
 }
 
 #slick-slide-control07 {
@@ -1203,6 +1250,42 @@ hr {
   overflow: hidden;
 }
 
+.show {
+  top: -20px;
+}
+
+::-webkit-scrollbar-button {
+  width: 5px;
+  height: 0px;
+}
+
+/* Цвет дорожки, по которой двигается бегунок прокрутки. */
+::-webkit-scrollbar-track {
+  background-color: #eceeed;
+}
+
+/* Цвет бегунка полосы, а так же его закругление. */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-color: #24A3FF;
+}
+
+/* Цвет бегунка при наведении на него курсора. */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6a6bd8;
+}
+
+/* Основная ширина полосы прокрутки. */
+::-webkit-resizer {
+  width: 4px;
+  height: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
 @media (max-width: 1920px) {
   .card_company-comtayner {
     max-width: 1320px;
@@ -1212,12 +1295,15 @@ hr {
   .card_company1 {
     border-radius: 10px 0 0 0;
     width: 25%;
+    cursor: pointer;
   }
   .card_company2 {
+    cursor: pointer;
     border-radius: 0 10px 0 0;
     width: 25%;
   }
   .card_company3 {
+    cursor: pointer;
     border-radius: 0 0 0 10px;
     width: 25%;
   }
@@ -1227,9 +1313,12 @@ hr {
   }
 }
 @media (max-width: 1320px) {
-  .last__footer{
+  .mgs {
+    margin-left: 20px;
+  }
+  .footer__contayner {
     margin-bottom: 30px;
-}
+  }
   .main_bg {
     margin-bottom: 60px;
   }
@@ -1266,7 +1355,6 @@ hr {
   .card_company1 {
     border-radius: 0px 0 0 0;
     width: 25%;
-    cursor: pointer;
   }
   .new_section_card-paragraph {
     height: 132px;
@@ -1278,17 +1366,14 @@ hr {
   .card_company2 {
     border-radius: 0 0px 0 0;
     width: 25%;
-    cursor: pointer;
   }
   .card_company3 {
     border-radius: 0 0 0 0px;
     width: 25%;
-    cursor: pointer;
   }
   .card_company4 {
     border-radius: 0 0 0px 0;
     width: 25%;
-    cursor: pointer;
   }
   .fix-size-main {
     padding: 0 15px;
@@ -1326,8 +1411,9 @@ hr {
   }
   .teamete_0 {
     display: flex;
-    max-width: 30%;
+    max-width: 34%;
     object-fit: cover;
+    border-radius: 12px 0 0 12px;
   }
   .main__card-ingormation-team {
     overflow: hidden;
@@ -1399,12 +1485,6 @@ hr {
   }
 }
 @media (max-width: 999px) {
-  .slick-prev.slick-arrow {
-    top: 15%;
-  }
-  .slick-next.slick-arrow {
-    top: 15%;
-  }
   .padding_1 {
     padding-bottom: 138px;
   }
@@ -1447,14 +1527,6 @@ hr {
   }
 }
 @media (max-width: 768px) {
-  .slick-prev.slick-arrow {
-    width: 20px;
-    height: 40px;
-  }
-  .slick-next.slick-arrow {
-    width: 20px;
-    height: 40px;
-  }
   .contact_inf {
     flex-direction: column;
   }
@@ -1500,12 +1572,6 @@ hr {
   }
 }
 @media (max-width: 768px) {
-  .slick-prev.slick-arrow {
-    top: 18%;
-  }
-  .slick-next.slick-arrow {
-    top: 18%;
-  }
   .header__conteyner {
     flex-direction: column;
     align-items: flex-start;
@@ -1527,6 +1593,7 @@ hr {
     display: flex;
     width: auto;
     justify-content: space-between;
+    overflow: hidden;
   }
   .bordereds {
     border-right: none;
@@ -1545,6 +1612,7 @@ hr {
     padding: 0;
     text-align: center;
     font-size: 36px;
+    white-space: nowrap;
   }
   .mgs:hover {
     padding: 0;
@@ -1564,9 +1632,6 @@ hr {
   }
 }
 @media (max-width: 720px) {
-  .last__footer{
-    margin: 0px;
-  }
   .footer__main-conteyner_contacts-footer {
     justify-content: center;
   }
@@ -1608,11 +1673,6 @@ hr {
     padding-bottom: 60px;
   }
 }
-@media (max-width: 640px) {
-  .mgs {
-    display: none;
-  }
-}
 @media (max-width: 611px) {
   .main__informations {
     width: auto;
@@ -1625,6 +1685,9 @@ hr {
   }
 }
 @media (max-width: 600px) {
+  .main__card-ingormation-text {
+    font-size: 30px;
+  }
   .Scroll {
     margin-top: 275px;
   }
@@ -1635,12 +1698,6 @@ hr {
   }
 }
 @media (max-width: 550px) {
-  .slick-prev.slick-arrow {
-    top: 20%;
-  }
-  .slick-next.slick-arrow {
-    top: 20%;
-  }
   .footer__card-conteiner-img_0 {
     display: flex;
     align-items: center;
@@ -1678,6 +1735,9 @@ hr {
   }
 }
 @media (max-width: 526px) {
+  .main__card-contayners {
+    margin-top: 40px;
+  }
   .main__first {
     padding: 0 30px;
   }
@@ -1788,21 +1848,11 @@ hr {
     margin: 0 22px 0 0;
   }
   .Scroll {
-    margin-top: 159px;
-    margin-bottom: 200px;
+    margin-top: 305px;
+    margin-bottom: 70px;
   }
 }
 @media (max-width: 526px) and (max-width: 500px) {
-  .slick-prev.slick-arrow {
-    width: 40px;
-    height: 60px;
-    top: 25%;
-  }
-  .slick-next.slick-arrow {
-    width: 40px;
-    height: 60px;
-    top: 25%;
-  }
   .footer__card-conteiner-img {
     width: 100%;
   }
@@ -1841,7 +1891,7 @@ hr {
 }
 @media (max-width: 526px) and (max-width: 406px) {
   .Scroll {
-    margin-bottom: 140px;
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 526px) and (max-width: 390px) {
