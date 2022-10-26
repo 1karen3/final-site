@@ -459,7 +459,7 @@ hr{
     border-top: 2px solid #E6E6F0;
     @extend %flex-right;
     padding: 30px 15px;
-    min-width: 320px;
+    min-width: 290px;
 }
 
 .footer__text{
@@ -1743,6 +1743,13 @@ hr{
 }
 
 @media (max-width: 526px){
+    .main__card-ingormation-team_column{
+        margin-left:0 ;
+    }
+    .main_service.main_service-margin{
+        margin-left: 0;
+        align-items: center;
+    }
     .main__card-contayners{
         margin-top: 40px;
     }

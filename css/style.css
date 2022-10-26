@@ -537,7 +537,7 @@ hr {
   height: 16px;
   border-radius: 50%;
 }
-mn
+
 .swipe1:hover:not(:first-child) {
   background-color: #5fb0fb;
   width: 16px;
@@ -561,6 +561,7 @@ mn
 .footer__contayner {
   border-top: 2px solid #E6E6F0;
   padding: 30px 15px;
+  min-width: 290px;
 }
 
 .footer__text {
@@ -1311,10 +1312,6 @@ mn
   width: 4px;
 }
 
-.main_service.main_service-margin{
-  align-items: center;
-}
-
 @media (max-width: 1920px) {
   .card_company-comtayner {
     max-width: 1320px;
@@ -1775,15 +1772,13 @@ mn
   }
 }
 @media (max-width: 526px) {
-  .main__card-ingormation-team-bg{
-    padding: 0;
-}
-.main__card-ingormation-team_column{
+  .main__card-ingormation-team_column {
     margin-left: 0;
-}
-.main_service.main_service-margin{
+  }
+  .main_service.main_service-margin {
     margin-left: 0;
-}
+    align-items: center;
+  }
   .main__card-contayners {
     margin-top: 40px;
   }
@@ -1901,11 +1896,6 @@ mn
     margin-bottom: 70px;
   }
 }
-@media (max-width: 460px){
-  .phone__footer{
-    font-size: 13px;
-  }
-}
 @media (max-width: 526px) and (max-width: 500px) {
   .footer__card-conteiner-img {
     width: 100%;
@@ -1929,8 +1919,7 @@ mn
     display: none;
   }
   .phone__footer {
-    margin: 13px 0;
-    font-size: 16px;
+    margin: 10px 0;
   }
   .sb {
     text-align: center;
