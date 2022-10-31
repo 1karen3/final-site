@@ -790,6 +790,15 @@ hr {
   cursor: pointer;
   margin-top: 30px;
   width: 400px;
+  text-decoration: none;
+}
+
+.no-text {
+  text-decoration: none;
+}
+
+.cart-text a {
+  text-decoration: none;
 }
 
 .cart-text:hover {
