@@ -47,4 +47,9 @@ $('.main__card-ingormation-team-swiper').slick({
 	});
 
 
-	new WOW().init();
+	let menuBtn = document.querySelector('.menu-btn');
+	let menu = document.querySelector('.menu');
+	menuBtn.addEventListener('click', function(){
+		menuBtn.classList.toggle('active22');
+		menu.classList.toggle('active22');
+	});

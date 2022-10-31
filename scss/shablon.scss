@@ -38,6 +38,13 @@
     color: $active_regular;
 }
 
+%h3_servicec{
+    font-family: 'Montserrat Bold';
+    font-size: 22px;
+    line-height: 27px;
+    color: $white;
+}
+
 %h3_caps{
     padding-top: 30px;
     font-family: 'Montserrat Bold';
@@ -105,7 +112,7 @@
     font-family: 'Montserrat Regular';
     font-size: 18px;
     line-height: 26px;
-    color: #000000;
+    color: $white;
 }
 
 %Ordered_list{

@@ -529,7 +529,7 @@ hr{
 }
 
 .h_text{
-    position: relative;
+    position: initial;
     color: $white;
     text-align: center;
     margin-top: 241px;
@@ -561,6 +561,7 @@ hr{
     margin-bottom: 75px;
     display: flex;
     flex-direction: row-reverse;
+    
 }
 
 .main__card-ingormation-team-bg{
@@ -602,7 +603,7 @@ hr{
 
 .main_service__title{
    @extend %hero_gradien;
-   margin-top: 10px;
+   margin-top: 30px;
 }
 
 .card__contayner{
@@ -691,6 +692,23 @@ hr{
     margin-right: 30px
 }
 
+.main__card-ingormation-text_0{
+    @extend %hero_gradien;
+    width: auto;
+    margin-bottom: 60px;
+}
+
+.main__card-ingormation-text_services{
+    @extend %hero_gradien;
+    margin-top: 28px;
+    width: auto;
+}
+
+.width{
+    width: 1080px;
+    margin-top: 28px;
+}
+
 .teamete__name{
     @extend %h4;
     margin-top: 30px;
@@ -768,6 +786,7 @@ hr{
 .new_section_card-title{
     @extend %h4;
     cursor: pointer;
+    display: inline-block;
 }
 
 .new_section_card-title:hover{
@@ -881,6 +900,52 @@ hr{
     padding-bottom: 30px;
 }
 
+#submit_services{
+    padding: 18px 30px;
+    width: 208px;
+    height: 56px;
+    background: #24A3FF;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    border: none;
+    margin-top: 30px;
+    @extend %h4;
+    color: white;
+}
+
+#submit_publ{
+    display: flex;
+    margin: 0 auto;
+    padding: 18px 30px;
+    width: 208px;
+    height: 56px;
+    background: #24A3FF;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    border: none;
+    margin-top: 30px;
+    @extend %h4;
+    color: white;
+}
+
+#submit_services:hover{
+    background: #0085FF;
+}
+
+#submit_services:active{
+    background: #006CCF;
+    border: none;
+}
+
+#submit_publ:hover{
+    background: #0085FF;
+}
+
+#submit_publ:active{
+    background: #006CCF;
+    border: none;
+}
+
 #submit:hover{
     background: #0085FF;
 }
@@ -938,11 +1003,12 @@ hr{
     font-family: 'Montserrat Regular';
     font-size: 16px;
     line-height: 26px;
-    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
     border-radius: 8px;
     background: $white;
     border: none;
-    height: 130px;
+    height: auto;
     margin-top: 15px;
     padding: 15px 15px 95px 15px;
 }
@@ -1215,10 +1281,343 @@ hr{
     width: 4px;
   }
 
+  .menu-btn {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+    right: 15px;
+}
+
+.menu-btn:active{
+    background-color: #565694;
+    border-radius: 8px 8px 8px 8px;
+    transition: 0.3s;
+}
+
+.menu-btn span {
+	width: 25px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #a3a3d7;
+	transition: all 0.5s;
+}
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+.menu {
+    min-width: 320px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 200px 50px;
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+	transform: translateY(-100%);
+	transition: transform 0.5s; 
+}
+
+.menu.active22 {
+	transform: translateX(0);
+}
+
+.main__firsts.active23 {
+    transform: translateX(0);
+}
+
+.menu li {
+	list-style-type: none;
+}
+
+.active22{
+    position: absolute;
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active22 span:nth-of-type(1) {
+    display: none;
+  }
+  .menu-btn.active22 span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);  
+  }
+  .menu-btn.active22 span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg); 
+  }
+
+  .heder_main-contayner_phone{
+    display: none;
+  }
+
+  .card_servics{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+    .services_arial-title{
+        @extend %h3_servicec;
+        max-width: 1080px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        border-top: 4px solid rgba(255, 255, 255, 0.5);
+        padding-top: 30px;
+    }
+
+    .services_arial-contayner{
+        margin-top: 30px;
+        display: flex;
+        max-width: 1080px;
+        margin: 0 auto;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+
+    .services_arial-list li span{
+        @extend %Unordered_list;
+    }
+
+    .services_arial-list li{
+        width: 496px;
+        margin-top: 25px;
+        padding-right: 25px;
+    }
+
+    .down{
+        margin-top: 60px;
+    }
+
+    .teamete_name{
+        @extend %h4;
+        color:#323264;
+        margin-top: 15px; 
+    }
+
+    .teamete_name a{
+        text-decoration: none;
+    }
+
+    .teamete_name a:hover{
+        color: #F0145A;
+        transition: 0.2s;
+    }
+
+    .teamete_work{
+        font-family: 'Montserrat Regular';
+        font-size: 14px;
+        line-height: 22px;
+        color: #B3B3BA;
+        margin-top: 5px;
+    }
+
+    .svg_down{
+        margin-top: 15px;
+    }
+
+    .more:hover{
+        transform: scale(1.2);
+        transition: 0.3s;
+    }
+
+    .more_flex{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+
+    .team_flex{
+        width: 400px;
+        display: inline-block;
+    }
+
+    .team_6-contayner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .team_margin{
+        margin: 0 15px;
+    }
+
+    .fix-size-main1{
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+:root {
+	--primary-color: #323264;
+	--secondary-color: #E6E6F0;;
+}
+
+.container-swiper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+.tabs {
+	display: flex;
+	position: relative;
+	background-color: #fff;
+	box-shadow: 0 0 1px 0 rgba(#185ee0, 0.15), 0 6px 12px 0 rgba(#185ee0, 0.15);
+	padding: 0.3rem;
+	border-radius: 99px; // just a high number to create pill effect
+	* {
+		z-index: 2;
+	}
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+.tab {
+    font-family: 'Montserrat Bold';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 54px;
+	width: 200px;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 99px; // just a high number to create pill effect
+	cursor: pointer;
+	transition: color 0.15s ease-in;
+}
+
+.notification {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	margin-left: 0.75rem;
+	border-radius: 50%;
+	background-color: var(--secondary-color);
+	transition: 0.15s ease-in;
+}
+
+input[type="radio"] {
+	&:checked {
+		& + label {
+			color: var(--primary-color);
+			& > .notification {
+				background-color: var(--primary-color);
+				color: #fff;
+			}
+		}
+	}
+}
+
+input[id="radio-1"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(0);
+		}
+	}
+}
+
+input[id="radio-2"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(100%);
+		}
+	}
+}
+
+input[id="radio-3"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(200%);
+		}
+	}
+}
+
+.glider {
+	position: absolute;
+	display: flex;
+	height: 54px;
+	width: 200px;
+	background-color: var(--secondary-color);
+	z-index: 1;
+	border-radius: 99px; // just a high number to create pill effect
+	transition: 0.25s ease-out;
+}
+
+.canblock{
+    display: block;
+}
+
+.button_padding{
+    padding-bottom: 60px;
+}
+
+@media (max-width: 700px) {
+	.tabs {
+        min-width: 320px;
+		transform: scale(0.6);
+	}
+}
+
+@media (max-width: 500px){
+    .glider {
+        width: 200px;
+    }
+}
+
+@media (max-width: 400px){
+    .glider {
+        width: 180px;
+    }
+}
+
+@media (max-width: 380px){
+    .glider {
+        width: 180px;
+    }
+}
+
+@media (max-width: 373px){
+    .glider {
+        width: 175px;
+    }
+}
+
+@media (max-width: 365px){
+    .glider {
+        width: 165px;
+    }
+}
+@media (max-width: 320px){
+    .glider {
+        width: 154px;
+    }
+}
+
 @media (max-width: 1920px){
     .card_company-comtayner{
         max-width: 1320px;
         margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
+    .header_publick{
         margin-bottom: 60px;
     }
 
@@ -1243,6 +1642,43 @@ hr{
     .card_company4{
         border-radius:0 0 10px 0;
         width: 25%;
+    }
+}
+
+@media (max-width: 1264px){
+    .team_6-contayner{
+        justify-content: space-between;
+    }
+    
+    .team_margin{
+        margin: 0;
+    }
+
+    .fix-size-main1{
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 430px){
+    .team_flex img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 840px){
+    .team_6-contayner{
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 1020px){
+    .services_arial-list li{
+        width: auto;
+        margin-top: 15px;
+        padding-right: 20px;
     }
 }
 
@@ -1344,6 +1780,11 @@ hr{
 }
 
 @media (max-width: 1111px){
+    
+    .width{
+        width: auto;
+    }
+
     .padding_1{
         padding-bottom: 121px;
     }
@@ -1400,6 +1841,9 @@ hr{
 }
 
 @media (max-width: 855px){
+    .services_arial{
+        margin-top: 60px;
+    }
     .header__main-conteyner_contacts{
         margin-top: 30px;
     }
@@ -1498,6 +1942,11 @@ hr{
 }
 
 @media (max-width: 768px){
+
+    .header_publick{
+        margin-bottom: 0px;
+    }
+
     .contayner-klient-info_0{
         margin: 0;
     }
@@ -1545,10 +1994,12 @@ hr{
     .h_text{
         padding: 0 15px;
         margin-top: 155px;
+        position: initial;
     }
 }
 
 @media (max-width: 768px){
+
     .header__conteyner{
         flex-direction: column;
         align-items: flex-start;
@@ -1703,6 +2154,28 @@ hr{
 }
 
 @media (max-width: 550px){
+    .down{
+        margin-top: 0;
+    }
+
+    .main__card-ingormation-text_0 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .services_arial-contayner{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        max-width: 1080px;
+        margin: 0 auto;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+
+    .services_arial-list li{
+        margin-top: 25px;
+    }
+
     .footer__card-conteiner-img_0{
         display: flex;
         align-items: center;
@@ -1743,6 +2216,34 @@ hr{
 }
 
 @media (max-width: 526px){
+    .nav__list__items a{
+        text-decoration: none;
+        color: $white;
+        font-family: 'Montserrat Bold'; 
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        margin-top: 22px;
+        height: 43px;
+        width: 100%;
+        padding: 0 12px;
+        align-items: center;
+        background: #F5F5FA;
+        border-radius: 12px;
+        color: $active_regular;
+    }
+    .nav__list__items a:hover{
+        transition: 0.4s;
+        transform: scale(1.02);
+        color:#F0145A;
+        transition: 0.2s;
+    }
+    .nav__list__items a:active{
+        background: #E6E6F0;
+    }
+    .heder_main-contayner_phone{
+        display: flex;
+    }
     .main__card-ingormation-team_column{
         margin-left:0 ;
     }
@@ -1764,6 +2265,7 @@ hr{
     }
     .heder_main-contayner_phone{
         margin-bottom: 30px;
+        align-items: center;
     }
     .header{
         padding: 0;
@@ -1863,7 +2365,7 @@ hr{
     .header__logo-mobile{
         display: flex;
         margin: 15px 0 0 15px;
-        width: 80%;
+        width: 60%;
     }
     
     .Hamburger{
