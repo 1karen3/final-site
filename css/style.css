@@ -1550,7 +1550,7 @@ hr {
 
 .menu {
   border-radius: 0 0 8px 8px;
-  z-index: 101;
+  z-index: 101g;
   min-width: 320px;
   position: fixed;
   top: 0;
