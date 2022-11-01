@@ -1293,6 +1293,7 @@ hr{
 	z-index:2;
 	overflow: hidden;
     right: 15px;
+    z-index: 101;
 }
 
 .menu-btn:active{
@@ -1319,6 +1320,8 @@ hr{
 }
 
 .menu {
+    border-radius: 0 0 8px 8px;
+    z-index: 100;
     min-width: 320px;
 	position: fixed;
 	top: 0;
@@ -1332,11 +1335,8 @@ hr{
 }
 
 .menu.active22 {
-	transform: translateX(0);
-}
-
-.main__firsts.active23 {
-    transform: translateX(0);
+	transform: translate(0);
+    top: 45px;
 }
 
 .menu li {
@@ -1473,7 +1473,6 @@ hr{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    margin-bottom: 30px;
     padding-top: 30px;
 }
 .tabs {
@@ -1498,7 +1497,7 @@ input[type="radio"] {
 	align-items: center;
 	justify-content: center;
 	height: 54px;
-	width: 200px;
+	min-width: 200px;
 	font-size: 16px;
 	font-weight: 500;
 	border-radius: 99px; // just a high number to create pill effect
@@ -1575,44 +1574,9 @@ input[id="radio-3"] {
 
 @media (max-width: 700px) {
 	.tabs {
-        min-width: 320px;
 		transform: scale(0.6);
+        z-index: 0;
 	}
-}
-
-@media (max-width: 500px){
-    .glider {
-        width: 200px;
-    }
-}
-
-@media (max-width: 400px){
-    .glider {
-        width: 180px;
-    }
-}
-
-@media (max-width: 380px){
-    .glider {
-        width: 180px;
-    }
-}
-
-@media (max-width: 373px){
-    .glider {
-        width: 175px;
-    }
-}
-
-@media (max-width: 365px){
-    .glider {
-        width: 165px;
-    }
-}
-@media (max-width: 320px){
-    .glider {
-        width: 154px;
-    }
 }
 
 @media (max-width: 1920px){
